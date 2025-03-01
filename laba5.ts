@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded" ,() => {
             if (arr[i] % 2 !== 0) {
                 console.log(`Удаляю: ${arr[i]}`);
                 arr.splice(i, 1);
-                i--; // Коррекция индекса после удаления
-                await new Promise(resolve => setTimeout(resolve, 1000)); // Ожидание 1 секунды
+                i--;
+                await new Promise(resolve => setTimeout(resolve, 1000));
             }
         }
         console.log("Результат:", arr);
